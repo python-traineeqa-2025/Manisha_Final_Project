@@ -9,6 +9,9 @@ class BaseTest:
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
     logger = logging.getLogger(__name__)
 
+    # def __init__(self,driver):
+    #     self.driver = driver
+
     def setup_method(self,method):
 
         self.driver = webdriver.Chrome()
